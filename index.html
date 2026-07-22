@@ -3,53 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>我的个人网站</title>
-  <style>
-    body {
-      max-width: 760px;
-      margin: 80px auto;
-      padding: 0 24px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.7;
-      color: #222;
-    }
-
-    h1 { color: #0969da; }
-
-    a {
-      color: #0969da;
-      text-decoration: none;
-    }
-
-    .card {
-      margin-top: 28px;
-      padding: 22px;
-      border-radius: 12px;
-      background: #f6f8fa;
-    }
-  </style>
+  <meta name="description" content="Symbol 的个人主页——vibe-coding 爱好者，Ore UI Launcher 开发中。" />
+  <meta name="theme-color" content="#101516" />
+  <title>Symbol — Vibe-coding & Ore UI Launcher</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="launcher-preview.css" />
+  <link rel="stylesheet" href="oreui-buttons.css" />
 </head>
 <body>
-  <h1>你好，我是你的名字 👋</h1>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Symbol，返回顶部">
+      <span class="brand-mark">S</span>
+      <span>SYMBOL<span class="brand-dot">.</span></span>
+    </a>
+    <nav aria-label="主导航">
+      <a href="#about">关于</a>
+      <a href="#project">项目</a>
+      <a href="#notes">进行时</a>
+      <a class="nav-cta" href="https://space.bilibili.com/2062660615" target="_blank" rel="noreferrer">Bilibili ↗</a>
+    </nav>
+  </header>
 
-  <p>
-    欢迎来到我的个人网站。我是一名开发者，关注前端、AI 和开源项目。
-  </p>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> DIGITAL CRAFTER / 2026</p>
+        <h1 id="hero-title">把灵感<br>编译成<span>体验。</span></h1>
+        <p class="hero-intro">嗨，我是 <strong>Symbol</strong>。一位迷恋氛围、界面和创造过程的 vibe-coding 爱好者；正在为 Minecraft 玩家打造更有个性的启动入口。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#project">探索当前项目 <b>↓</b></a>
+          <a class="button button-quiet" href="https://space.bilibili.com/2062660615" target="_blank" rel="noreferrer">关注我的 B 站 <b>↗</b></a>
+        </div>
+      </div>
 
-  <div class="card">
-    <h2>联系方式</h2>
-    <ul>
-      <li>GitHub：<a href="https://github.com/yourname">@yourname</a></li>
-      <li>邮箱：yourname@example.com</li>
-    </ul>
-  </div>
+      <div class="hero-art launcher-home-preview" aria-label="Ore UI Launcher 首页参考预览">
+        <div class="preview-titlebar">
+          <div><span class="ore-diamond">◆</span><span>Ore Ui Launcher</span></div><span></span><span>−　□　×</span>
+        </div>
+        <div class="preview-app">
+          <aside class="preview-sidebar">
+            <span class="side-item"><img src="assets/side.png" alt="" />折叠侧栏</span>
+            <div class="sidebar-divider"></div>
+            <span class="side-item active"><img src="assets/game.png" alt="" />开始游戏</span>
+            <span class="side-item"><img src="assets/download.png" alt="" />下载资源</span>
+            <span class="side-item"><img src="assets/news.png" alt="" />新闻</span>
+            <span class="side-item"><img src="assets/settings.png" alt="" />设置</span>
+            <span class="side-item side-about"><img src="assets/about.png" alt="" />关于</span>
+          </aside>
+          <div class="preview-body">
+            <img class="preview-minecraft-title" src="assets/minecraft-title.png" alt="Minecraft" />
+            <div class="preview-play-panel">
+              <div class="preview-field"><label>游戏版本</label><span><i>选择已安装版本...</i><b>⌄</b></span></div>
+              <div class="preview-field account"><label>当前账号</label><span><i>未选择账号</i><small>离线账号</small></span></div>
+              <div class="preview-button-wrap"><label>&nbsp;</label><button class="oreui-btn disabled_btn" aria-disabled="true">开始游戏</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="card">
-    <h2>我的项目</h2>
-    <ul>
-      <li><a href="https://github.com/yourname/project-one">项目一</a></li>
-      <li><a href="https://github.com/yourname/project-two">项目二</a></li>
-    </ul>
-  </div>
+    <section class="marquee" aria-label="关键词">
+      <div class="marquee-track">
+        <span class="marquee-group">VIBE-CODING <em>✦</em> UI EXPLORATION <em>✦</em> MINECRAFT <em>✦</em> CREATIVE BUILDING <em>✦</em></span>
+        <span class="marquee-group" aria-hidden="true">VIBE-CODING <em>✦</em> UI EXPLORATION <em>✦</em> MINECRAFT <em>✦</em> CREATIVE BUILDING <em>✦</em></span>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-label">01 / ABOUT</div>
+      <div class="about-content">
+        <h2>不止写代码，<br>也在设计<span>感觉。</span></h2>
+        <div class="about-text">
+          <p>我喜欢从一个念头、一段音乐或一张截图开始，然后把它变成可以点击、可以使用、也愿意让人停留的东西。</p>
+          <p>Vibe-coding 对我而言是一种创作方式：让直觉先带路，再用代码把每个细节打磨到位。我的关注点始终是清晰的交互、独特的视觉语言和那一点恰到好处的惊喜。</p>
+          <div class="chips" aria-label="技能与兴趣">
+            <span>Creative coding</span><span>UI systems</span><span>Minecraft</span><span>Open source</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project section" id="project">
+      <div class="section-label">02 / SELECTED WORK</div>
+      <article class="project-card">
+        <div class="project-meta"><span>IN DEVELOPMENT</span><span>01 — 01</span></div>
+        <div class="project-main">
+          <div>
+            <p class="project-kicker">ORE UI LAUNCHER</p>
+            <h2>让每一次<br>启动，都有<span>矿石般的质感。</span></h2>
+          </div>
+          <p class="project-description">一个基于 <a href="https://github.com/Spectrollay-OreUI/OreUI" target="_blank" rel="noreferrer">Ore UI ↗</a> 设计语言构想的 Minecraft 启动器。它希望把启动游戏这件小事，变成更直观、更沉浸、也更属于你的桌面体验。</p>
+        </div>
+        <div class="launcher-preview launcher-home-preview" aria-label="Ore UI Launcher 首页结构预览">
+          <div class="preview-titlebar">
+            <div><span class="ore-diamond">◆</span><span>Ore Ui Launcher</span></div><span></span><span>−　□　×</span>
+          </div>
+          <div class="preview-app">
+            <aside class="preview-sidebar" aria-label="启动器导航">
+              <span class="side-item"><img src="assets/side.png" alt="" />折叠侧栏</span>
+              <div class="sidebar-divider"></div>
+              <span class="side-item active"><img src="assets/game.png" alt="" />开始游戏</span>
+              <span class="side-item"><img src="assets/download.png" alt="" />下载资源</span>
+              <span class="side-item"><img src="assets/news.png" alt="" />新闻</span>
+              <span class="side-item"><img src="assets/settings.png" alt="" />设置</span>
+              <span class="side-item side-about"><img src="assets/about.png" alt="" />关于</span>
+            </aside>
+            <div class="preview-body">
+              <img class="preview-minecraft-title" src="assets/minecraft-title.png" alt="Minecraft" />
+              <div class="preview-play-panel">
+                <div class="preview-field"><label>游戏版本</label><span><i>选择已安装版本...</i><b>⌄</b></span></div>
+                <div class="preview-field account"><label>当前账号</label><span><i>未选择账号</i><small>离线账号</small></span></div>
+                <div class="preview-button-wrap"><label>&nbsp;</label><button class="oreui-btn disabled_btn" aria-disabled="true">开始游戏</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-footer">
+          <span>DESIGN × BUILD × PLAY</span>
+          <a href="https://github.com/Spectrollay-OreUI/OreUI" target="_blank" rel="noreferrer">Ore UI source <b>↗</b></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="notes section" id="notes">
+      <div class="section-label">03 / NOW</div>
+      <div class="notes-grid">
+        <h2>此刻，<br>我在<span>构建。</span></h2>
+        <div class="now-list">
+          <div class="now-item"><span class="now-number">01</span><div><h3>Ore UI Launcher</h3><p>持续雕琢界面、流程与启动体验。</p></div><span class="status"><i></i> 活跃</span></div>
+          <div class="now-item"><span class="now-number">02</span><div><h3>记录创作过程</h3><p>在 Bilibili 分享开发碎片、灵感和折腾日常。</p></div><a class="arrow-link" href="https://space.bilibili.com/2062660615" target="_blank" rel="noreferrer" aria-label="访问 Symbol 的 Bilibili 主页">↗</a></div>
+          <div class="now-item"><span class="now-number">03</span><div><h3>下一段 vibe</h3><p>继续尝试新的工具、交互与表达方式。</p></div><span class="arrow-link muted">✦</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section">
+      <p class="eyebrow"><span></span> LET'S MAKE SOMETHING</p>
+      <h2>有趣的想法，<br>值得<span>发生。</span></h2>
+      <a class="contact-link" href="https://space.bilibili.com/2062660615" target="_blank" rel="noreferrer">在 Bilibili 找到我 <b>↗</b></a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#top"><span class="brand-mark">S</span><span>SYMBOL<span class="brand-dot">.</span></span></a>
+    <p>Built with curiosity & good vibes.</p>
+    <p>© 2026 Symbol</p>
+  </footer>
 </body>
 </html>
